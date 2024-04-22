@@ -3,6 +3,7 @@ package org.example;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.example.consumoAPI.AdaptadorFecha;
 import org.example.consumoAPI.ConsumoApi;
 import org.example.modelos.Conversion;
 import org.json.JSONException;
@@ -10,6 +11,7 @@ import org.json.JSONObject;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -47,7 +49,7 @@ public class Menu {
                 Debe ingresar las 3 primeras letras, luego presionar enter.
                 0) Salir
                 """);
-            System.out.print("Elija una opción valida: ");
+            System.out.print("Ingrese las siglas: ");
             opcion =  lectura.next();
             double valorMoneda = 0;
             if (!opcion.equals("0")){
@@ -113,6 +115,7 @@ public class Menu {
     private void guardarLista(List<Conversion> listaConversion){
         Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .registerTypeAdapter(LocalDateTime.class,new AdaptadorFecha())
                 .setPrettyPrinting()
                 .create();
         try {

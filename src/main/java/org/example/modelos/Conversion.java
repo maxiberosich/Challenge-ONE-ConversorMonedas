@@ -1,5 +1,7 @@
 package org.example.modelos;
 
+import java.time.LocalDateTime;
+
 public class Conversion {
 
     private String nombreMonedaAConvertir;
@@ -7,13 +9,16 @@ public class Conversion {
     private Double valorMoneda;
     private Double importeAConvertir;
     private Double resultadoConversion;
+    private LocalDateTime horaBusqueda;
 
-    public Conversion(String nombreMonedaAConvertir, String nombreMoonedaConvertida, Double valorMoneda, Double importeAConvertir, Double resultadoConversion) {
+    public Conversion(String nombreMonedaAConvertir, String nombreMoonedaConvertida,
+                      Double valorMoneda, Double importeAConvertir, Double resultadoConversion) {
         this.nombreMonedaAConvertir = nombreMonedaAConvertir;
         this.nombreMoonedaConvertida = nombreMoonedaConvertida;
         this.valorMoneda = valorMoneda;
         this.importeAConvertir = importeAConvertir;
         this.resultadoConversion = resultadoConversion;
+        this.horaBusqueda = LocalDateTime.now();
     }
 
     public String getNombreMonedaAConvertir() {
@@ -36,13 +41,19 @@ public class Conversion {
         return resultadoConversion;
     }
 
+    public LocalDateTime getHoraBusqueda() {
+        return horaBusqueda;
+    }
+
     @Override
     public String toString() {
         return "Conversion{" +
-                "nombreMonedaAConvertir='" + nombreMonedaAConvertir + '\'' +
-                ", valorMoneda=" + valorMoneda +
-                ", importeAConvertir=" + importeAConvertir +
-                ", resultadoConversion=" + resultadoConversion +
+                "Moneda a convertir = '" + nombreMonedaAConvertir.toUpperCase() + '\'' +
+                ", Moneda convertida='" + nombreMoonedaConvertida.toUpperCase()+ '\'' +
+                ", Valor moneda=" + valorMoneda +
+                ", Importe a convertir=" + importeAConvertir +
+                ", Resultado de Conversion=" + resultadoConversion +
+                ", Hora de Busqueda=" + horaBusqueda +
                 '}';
     }
 }
