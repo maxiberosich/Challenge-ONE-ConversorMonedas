@@ -22,7 +22,7 @@
 - `Interfaz de Usuario Interactiva`: Se proporciona una interfaz de usuario interactiva mediante la línea de comandos, donde el usuario puede seleccionar diferentes acciones a realizar.-
 - `Conversión de Monedas`: Permite al usuario convertir una cantidad de dólares estadounidenses a otra moneda seleccionada utilizando las tasas de cambio obtenidas de la API.
 
-## Tecnologias utilizadas
+## Tecnologías utilizadas
 
 <p><strong>>Java:</strong> El proyecto está desarrollado en Java, aprovechando las capacidades del lenguaje para realizar solicitudes HTTP y procesar respuestas JSON.</p>
 <p><strong>>HttpClient:</strong> Se utiliza la clase HttpClient de Java para realizar las solicitudes HTTP a la API de tasas de cambio.</p>
