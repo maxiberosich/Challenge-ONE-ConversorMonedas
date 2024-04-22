@@ -1,0 +1,44 @@
+[
+  {
+    "NombreMonedaAConvertir": "ars",
+    "NombreMoonedaConvertida": "USD",
+    "ValorMoneda": 864.75,
+    "ImporteAConvertir": 123.0,
+    "ResultadoConversion": 106364.25
+  },
+  {
+    "NombreMonedaAConvertir": "USD",
+    "NombreMoonedaConvertida": "ars",
+    "ValorMoneda": 864.75,
+    "ImporteAConvertir": 32132.0,
+    "ResultadoConversion": 37.15755998843596
+  },
+  {
+    "NombreMonedaAConvertir": "USD",
+    "NombreMoonedaConvertida": "cop",
+    "ValorMoneda": 3913.8964,
+    "ImporteAConvertir": 159.0,
+    "ResultadoConversion": 0.04062447846090152
+  },
+  {
+    "NombreMonedaAConvertir": "cop",
+    "NombreMoonedaConvertida": "USD",
+    "ValorMoneda": 3913.8964,
+    "ImporteAConvertir": 20.0,
+    "ResultadoConversion": 78277.928
+  },
+  {
+    "NombreMonedaAConvertir": "brl",
+    "NombreMoonedaConvertida": "USD",
+    "ValorMoneda": 5.2138,
+    "ImporteAConvertir": 15.0,
+    "ResultadoConversion": 78.207
+  },
+  {
+    "NombreMonedaAConvertir": "USD",
+    "NombreMoonedaConvertida": "brl",
+    "ValorMoneda": 5.2138,
+    "ImporteAConvertir": 258.0,
+    "ResultadoConversion": 49.484061529019144
+  }
+]
